@@ -1,0 +1,22 @@
+# ── Output files ─────────────────────────────────────────────
+*.pdf
+*.png
+*.csv
+
+# ── Large data files ──────────────────────────────────────────
+*.tsv
+*.txt
+
+# ── Python ────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.py[cod]
+
+# ── R session artefacts ───────────────────────────────────────
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf
+
+# ── Claude internal ───────────────────────────────────────────
+.claude/
