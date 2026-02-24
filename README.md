@@ -4,18 +4,18 @@ R pipelines for CRISPRi/CRISPRko screen integration and immune cell pathway visu
 
 ---
 
-## Why not a hairball?
+## Motivation: beyond force-directed network layouts
 
-Standard network visualisation tools (Cytoscape, igraph, STRING) produce **force-directed layouts** where node position is determined by edge weight, not biology. The result is a hairball: dense, non-reproducible, and unreadable at publication figure size. Key problems:
+Standard network visualisation tools (Cytoscape, igraph, STRING) use **force-directed layouts** where node position is determined by edge weight, not biology. These layouts are dense, non-reproducible across runs, and collapse to unreadable clusters at publication figure size. This pipeline addresses those limitations with a curated, biologically anchored design:
 
-| Traditional approach | This pipeline |
+| Conventional approach | This pipeline |
 |---|---|
-| Random / force-directed node positions | Curated x/y coordinates follow **biological compartments** (membrane → cytoplasm → nucleus) |
-| All genes shown equally | **Hit-centric**: only significant CRISPRi hits are full nodes; non-hit connectors are minimal grey bridges |
+| Force-directed / arbitrary node positions | Curated x/y coordinates follow **biological compartments** (membrane → cytoplasm → nucleus) |
+| All genes rendered equally | **Hit-centric**: only significant CRISPRi hits are full nodes; non-hit connectors are minimal grey bridges |
 | Single colour per node (up/down) | **5-state concordance encoding** across N screens |
 | One screen at a time | **N-screen merge** with Fisher's combined p-value rewarding replication |
-| No domain annotation | **SH2-domain halo** and other structural features overlaid directly |
-| Separate figures per screen | **Dot-matrix** below each node shows per-assay direction in one figure |
+| No domain annotation | **SH2-domain halo** and other structural features overlaid directly on nodes |
+| Separate figures per screen | **Dot-matrix** below each node shows per-assay direction in a single figure |
 
 ---
 
