@@ -1,11 +1,11 @@
 # ============================================================
-# Hit-Centric CRISPRi T Cell Pathway Diagram
+# Hit-Centric CRISPRi Immune Cell Pathway Diagram
 # Carnevale et al. — MAGeCK gene-level results
 #
 # Design:
 #   1. Load ALL significant hits (neg.fdr<0.10 & neg.lfc<-0.20,
 #      or pos.fdr<0.10 & pos.lfc>0.20)
-#   2. Map every hit to a curated x/y position on a T cell
+#   2. Map every hit to a curated x/y position on an immune cell
 #      pathway canvas using a lookup table.
 #   3. Non-hit "connector" nodes are placed ONLY to bridge
 #      two hits; they are small, grey, and barely labelled.
@@ -51,7 +51,7 @@ map_chr     <- purrr::map_chr
 # ── 1.  Settings ─────────────────────────────────────────────
 FDR_CUT <- 0.10
 LFC_CUT <- 0.20
-OUT     <- "C:/Users/difen/Rcode/Tcell_CRISPRi_pathway"
+OUT     <- "C:/Users/difen/Rcode/ImmuneCell_CRISPRi_pathway"
 TSTAMP  <- format(Sys.time(), "%Y%m%d_%H%M%S")   # e.g. 20250222_143512
 
 # ── 1b.  Multi-screen configuration ──────────────────────────

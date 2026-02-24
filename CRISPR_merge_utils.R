@@ -4,7 +4,7 @@
 # Utilities for importing and merging multiple MAGeCK
 # CRISPRi/CRISPRko/CRISPRa gene-level screens, then
 # producing a merged node table compatible with
-# CRISPR_to_Tcell_pathway.R.
+# CRISPR_to_ImmuneCell_pathway.R.
 #
 # Key functions:
 #   load_mageck()    — read one MAGeCK gene_summary.txt
@@ -29,7 +29,7 @@
 # ── Convention guide ─────────────────────────────────────────
 # "CRISPRi"  : knockdown. depleted gene → LOSS of gene product
 #              neg.lfc < 0 (depleted) means gene was NEEDED → GoF hit (blue)
-#              pos.lfc > 0 (enriched) means gene suppressed T cell → LoF hit (red)
+#              pos.lfc > 0 (enriched) means gene suppressed immune cell → LoF hit (red)
 #              (Carnevale convention)
 #
 # "CRISPRko" : knockout. same direction mapping as CRISPRi for most screens
