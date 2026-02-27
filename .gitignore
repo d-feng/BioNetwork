@@ -1,0 +1,27 @@
+# ── Output files ─────────────────────────────────────────────
+*.pdf
+*.png
+*.csv
+
+# ── Large data files ──────────────────────────────────────────
+*.tsv
+*.txt
+
+# ── Python ────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.py[cod]
+
+# ── R session artefacts ───────────────────────────────────────
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf
+
+# ── Claude internal ───────────────────────────────────────────
+.claude/
+
+# ── Excluded R scripts ────────────────────────────────────────
+TCGA_PAAD_Survival_TME.R
+TCGA_PAAD_Survival_TME_v2.R
+test_AGRN_logrank.R
